@@ -467,7 +467,6 @@ section {
   }
   header {
     padding: 5rem;
-    overflow: hidden;
   }
   .header-content {
     display: grid;
@@ -481,10 +480,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .header-content .left-content img {
-    height: 70%;
-    overflow: hidden;
   }
   .header-content .right-content {
     padding-right: 0;

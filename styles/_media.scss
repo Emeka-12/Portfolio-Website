@@ -6,7 +6,6 @@
 
     header {
         padding: 5rem;
-        overflow: hidden;
     }
 
     .header-content {
@@ -21,10 +20,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            img {
-                height: 70%;
-                overflow: hidden;
-            }
         }
     
         .right-content {
