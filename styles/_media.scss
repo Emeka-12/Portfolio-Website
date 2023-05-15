@@ -1,95 +1,14 @@
 // for Larger Devices
-@media screen and (max-width: 1350px) {
-    header {
-        padding: 10rem;
-        overflow: hidden;
-    } 
-    section {
-        padding: 10rem;
-    }
-
-    .header-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 100%;
-        width: 100%;
-    
-        .left-content {
-            padding-left: 4rem;
-            padding-right: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-    
-        .right-content {
-            grid-row: 1;
-            width: 80%;
-            margin: 0 auto;
-        }    
-    }
-
-    .contact-content  {
-        display: grid;
-        grid-template-columns: 1fr;
-
-        .left-contact {
-            .contact-icons {
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        
-        .right-contact {
-            margin-left: 0;
-            input {
-                margin-bottom: 1rem;
-            }
-            .input-c-2 {
-                display: block;
-                :last-child {
-                    margin-left: 0;
-                }
-                .input-text {
-                    margin-top: 3rem;
-                    margin-bottom: 1rem;
-                }
-            }
-        }
-    }
-
-    .portfolios {
-        padding: 0 5rem;
-        grid-template-columns: repeat(2, 1fr);
-        .portfolio {
-            img {
-                height: 300px;
-            }
-        }
-    }
-
-    .blogs {
-        padding: 0 5rem;
-        grid-template-columns: repeat(2, 1fr);
-        .blog {
-            img {
-                height: 250px;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 950px) {
-    header {
-        padding: 5rem;
-        overflow: hidden;
-    } 
+@media screen and (max-width: 1279px) {
     section {
         padding: 5rem 2rem;
     }
 
+    header {
+        padding: 5rem;
+        overflow: hidden;
+    }
+
     .header-content {
         display: grid;
         grid-template-columns: 1fr;
@@ -102,14 +21,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            img {
+                height: 70%;
+                overflow: hidden;
+            }
         }
     
         .right-content {
+            padding-right: 0;
             grid-row: 1;
-            width: 80%;
-            margin: 0 auto;
         }    
+    }
+
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        .portfolio {
+            img {
+                height: 300px;
+            }
+        }
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        .blog {
+            img {
+                height: 250px;
+            }
+        }
     }
 
     .contact-content  {
@@ -141,26 +80,33 @@
         }
     }
 
-    .portfolios {
-        padding: 0 5rem;
-        grid-template-columns: repeat(2, 1fr);
-        .portfolio {
-            img {
-                height: 300px;
+    .controls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+
+        .active-btn {
+            background-color: var(--color-red) !important;
+            i {
+                color: var(--color-white);
             }
         }
-    }
 
-    .blogs {
-        padding: 0 5rem;
-        grid-template-columns: repeat(2, 1fr);
-        .blog {
-            img {
-                height: 250px;
+        .control {
+            margin: 1rem 0.4rem;
+            width: 60px;
+            height: 60px;
+            i {
+                font-size: 1.5rem;
             }
         }
     }
 }
+
 
 
 @media screen and (max-width: 750px) {
